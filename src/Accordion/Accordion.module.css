@@ -1,0 +1,42 @@
+.container {
+    max-width: 280px;
+    margin: auto;
+}
+.accordion {
+
+    max-width: 240px;
+    margin: 18px auto;
+}
+.accordionHeading{
+    padding: 14px 0;
+}
+.accordionHeading .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.accordionHeading p {
+    letter-spacing: 1.2px;
+    font-weight: 600;
+}
+.accordionHeading span {
+    cursor: pointer;
+}
+
+.accordionContent{
+    height: 0;
+    opacity: 0; 
+    display: flex;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+}
+.accordionContent.show {
+    height: 180px;
+    opacity: 1; 
+    overflow-y: auto;
+}
+.accordionContent p {
+    font-size: 15px;
+    line-height: 1.6;
+}
